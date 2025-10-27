@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Blackjack</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+  </head>
+
+  <body>
+    <span id='highscoreSchrift'> Highscore: <span id="highscore">0</span></span>
+    <div id="spielbereich">
+        
+        <div id ="dealer-value" class ="value"></div>
+        <div id="dealer-hand" class="hand">
+        </div>
+
+        <div id="resultat" class="ergebnis"><p></p>
+        </div>
+
+        <div id="player-hand" class="hand">
+
+        </div>
+        <div id ="player-value" class ="value"></div>
+
+        <div id="bottom-bar">
+    <div class="bottom-row">
+        <div id="währung">
+            <span id="guthaben-label">Guthaben: </span><span id="guthaben">100</span> €
+            <br>
+            <span id="einsatz-label">Einsatz: </span>
+            <button id="einsatz-minus">-</button>
+            <span id="einsatz">10</span> €
+            <button id="einsatz-plus">+</button>
+        </div>
+        <button id="all-in-btn" title="Setze alles" style="margin: 0 20px;">All-In</button>
+        <button id="new-game-btn">Neues Spiel</button>
+    </div>
+    <div id="controls">
+        <button id="hit-btn">Hit</button>
+        <button id="stand-btn">Stand</button>
+        <button id="split-btn">Split</button>
+    </div>
+</div>
+        <div id="resultat"></div>
+    </div>
+  <script src="js/deck.js"></script>
+  </body>
+</html>
